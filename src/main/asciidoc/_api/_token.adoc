@@ -1,0 +1,58 @@
+== Token Resource
+Token-Controller Resource
+
+
+[[retrievePublicKey]]
+=== Retrieve public key for JWT
+
+==== Example request
+include::{snippets}/token-retrieve-public-key/curl-request.adoc[]
+
+==== Response structure
+include::{snippets}/token-retrieve-public-key/response-fields.adoc[]
+
+==== Example response
+include::{snippets}/token-retrieve-public-key/http-response.adoc[]
+
+
+[[retrieveToken]]
+=== Retrieve token
+
+==== Request structure
+
+===== Request header
+include::{snippets}/token-login/request-headers.adoc[]
+
+===== Request parameter
+include::{snippets}/token-login/request-parameters.adoc[]
+
+==== Example request
+include::{snippets}/token-login/curl-request.adoc[]
+
+==== Response structure
+include::{snippets}/token-login/response-fields.adoc[]
+
+==== Example response
+include::{snippets}/token-login/http-response.adoc[]
+
+
+
+[[refreshToken]]
+=== Refresh token
+
+==== Request structure
+
+===== Request header
+include::{snippets}/token-refresh/request-headers.adoc[]
+
+===== Request parameter
+include::{snippets}/token-refresh/request-parameters.adoc[]
+
+==== Example request
+include::{snippets}/token-refresh/curl-request.adoc[]
+
+==== Response structure
+include::{snippets}/token-refresh/response-fields.adoc[]
+
+==== Example response
+include::{snippets}/token-refresh/http-response.adoc[]

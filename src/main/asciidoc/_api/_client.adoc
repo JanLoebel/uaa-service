@@ -1,0 +1,49 @@
+== Client Resource
+Client-Controller Resource
+
+
+[[getClient]]
+=== Get clients
+
+==== Request structure
+include::{snippets}/client-get/request-parameters.adoc[]
+
+==== Example request
+include::{snippets}/client-get/curl-request.adoc[]
+
+==== Response structure
+include::{snippets}/client-get/response-fields.adoc[]
+
+==== Example response
+include::{snippets}/client-get/http-response.adoc[]
+
+
+[[createClient]]
+=== Create new client
+
+==== Request structure
+include::{snippets}/client-create/request-fields.adoc[]
+
+==== Example request
+include::{snippets}/client-create/curl-request.adoc[]
+
+==== Response structure
+include::{snippets}/client-create/response-fields.adoc[]
+
+==== Example response
+include::{snippets}/client-create/http-response.adoc[]
+
+
+
+[[deleteClient]]
+=== Delete client
+
+==== Request structure
+===== Path parameters
+include::{snippets}/client-delete/path-parameters.adoc[]
+
+==== Example request
+include::{snippets}/client-delete/curl-request.adoc[]
+
+==== Example response
+include::{snippets}/client-delete/http-response.adoc[]

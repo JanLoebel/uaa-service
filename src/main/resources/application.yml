@@ -1,0 +1,43 @@
+server:
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+
+spring:
+  main:
+    banner-mode: off
+
+  application:
+    name: uaa-service
+
+  profiles:
+    include: uaa # include uaa.yml to load application defined properties
+
+  # 18n file path
+  messages:
+        basename: i18n/messages
+        fallbackToSystemLocale: false
+
+  # Jackson settings
+  jackson.serialization-inclusion: non-null
+
+  # Default Database settings
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    test-on-borrow: true
+    validation-query: SELECT 1
+    cachePrepStmts: true
+    prepStmtCacheSize: 250
+    prepStmtCacheSqlLimit: 2048
+    hikari: # Special Options for HikariCP
+      minimumIdle: 10
+      maximumPoolSize: 25
+
+  jpa:
+    hibernate:
+      cache:
+        use_query_cache: true
+        use_second_level_cache: true
+        region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
+      naming:
+        strategy: org.hibernate.cfg.DefaultNamingStrategy # Naming strategy to use @Column(name=...)

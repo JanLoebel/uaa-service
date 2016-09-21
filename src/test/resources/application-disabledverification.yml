@@ -1,0 +1,2 @@
+# Disabled verification
+uaa.account.verification: false

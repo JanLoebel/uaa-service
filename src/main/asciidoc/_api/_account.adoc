@@ -1,0 +1,97 @@
+== Account Resource
+Account-Controller Resource
+
+
+[[registerNewUser]]
+=== Register new user
+
+==== Request structure
+include::{snippets}/account-register-new-user/request-fields.adoc[]
+
+==== Example request
+include::{snippets}/account-register-new-user/curl-request.adoc[]
+
+==== Response structure
+include::{snippets}/account-current-user-information/response-fields.adoc[]
+
+==== Example response
+include::{snippets}/account-register-new-user/http-response.adoc[]
+
+
+[[activateNewUser]]
+=== Activate new user
+
+==== Request structure
+===== Path parameters
+include::{snippets}/account-activate-new-user/path-parameters.adoc[]
+
+===== Request parameters
+include::{snippets}/account-activate-new-user/request-parameters.adoc[]
+
+==== Example request
+include::{snippets}/account-activate-new-user/curl-request.adoc[]
+
+==== Response structure
+include::{snippets}/account-current-user-information/response-fields.adoc[]
+
+==== Example response
+include::{snippets}/account-activate-new-user/http-response.adoc[]
+
+
+[[currentUserInformation]]
+=== Get current user information
+
+==== Example request
+include::{snippets}/account-current-user-information/curl-request.adoc[]
+
+==== Response structure
+include::{snippets}/account-current-user-information/response-fields.adoc[]
+
+==== Example response
+include::{snippets}/account-current-user-information/http-response.adoc[]
+
+
+[[updateUserInformation]]
+=== Update current user information
+
+==== Request structure
+include::{snippets}/account-update-user-information/request-fields.adoc[]
+
+==== Example request
+include::{snippets}/account-update-user-information/curl-request.adoc[]
+
+==== Response structure
+include::{snippets}/account-current-user-information/response-fields.adoc[]
+
+==== Example response
+include::{snippets}/account-update-user-information/http-response.adoc[]
+
+
+[[triggerPasswordReset]]
+=== Trigger password reset
+
+==== Request structure
+include::{snippets}/account-trigger-password-reset/request-parameters.adoc[]
+
+==== Example request
+include::{snippets}/account-trigger-password-reset/curl-request.adoc[]
+
+==== Example response
+include::{snippets}/account-trigger-password-reset/http-response.adoc[]
+
+
+[[confirmPasswordReset]]
+=== Confirm password reset
+
+==== Request structure
+include::{snippets}/account-confirm-password-reset/request-parameters.adoc[]
+
+==== Example request
+include::{snippets}/account-confirm-password-reset/curl-request.adoc[]
+
+==== Response structure
+include::{snippets}/account-current-user-information/response-fields.adoc[]
+
+==== Example response
+include::{snippets}/account-confirm-password-reset/http-response.adoc[]
+

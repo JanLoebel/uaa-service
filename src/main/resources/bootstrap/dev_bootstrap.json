@@ -1,0 +1,20 @@
+{
+	"clients": [
+		{
+			"client_id": "client1",
+			"auto_approve": true
+		},
+		{
+			"client_id": "client_id",
+			"client_secret": "client_secret",
+			"auto_approve": false
+		}
+	],
+	"users": [
+		{
+			"username": "user1",
+			"password": "password1",
+			"email": "user1@password.de"
+		}
+	]
+}

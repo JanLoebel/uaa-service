@@ -1,0 +1,55 @@
+server.port: 8080
+
+#--------------------------------
+# Application based properties
+uaa:
+  baseUrl: http://localhost:8080/ # required
+  bootstrapFile: # optional, default = null
+  templatePath: # optional, default = null
+  
+  jwt.keystore: # required
+    path: classpath:jwt-test.jks # required
+    password: testpass # required
+    keypair: jwt-test # required
+
+  clientDefault:
+    accessTokenValiditySeconds: 3000 # optional, default = 3000
+    authorizedGrantTypes: implicit,refresh_token,password,authorization_code # optional, default = implicit,refresh_token,password,authorization_code
+    autoApprove: false # optional, default = false
+
+  mail.from: uaa@localhost.local #optional, default = uua@localhost.local
+
+  account:
+    verification: true # optional, default = true
+    passwordResetCodeValidityMinutes: 3600 # optional, default = 3600
+    defaultLocale: english # optional, default = english
+    password:
+      minLength: 4 # optional, default = 4
+      maxLength: 100 # optional, default = 100
+      regex: # optional, default = null
+    username:
+      minLength: 3 # optional, default = 3
+      maxLength: 50 # optional, default = 50
+      regex: ^[a-zA-Z0-9]*$ # optional, default = ^[a-zA-Z0-9]*$
+    email:
+      minLength: 4 # optional, default = 4
+      maxLength: 100 # optional, default = 100
+
+spring:
+  # Email server settings
+  mail:
+    host: localhost
+    port: 25
+    username:
+    password:
+
+  # Database settings
+  datasource:
+    url: jdbc:mysql://localhost:3311/auth
+    username: root
+    password: 
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate.ddl-auto: update
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+#--------------------------------

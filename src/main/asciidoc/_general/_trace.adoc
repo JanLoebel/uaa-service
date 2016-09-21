@@ -1,0 +1,6 @@
+== Trace a request
+
+Sometimes it is important to trace everything related to a specific request. Therefore you can add '?trace=on' behind each request to activate TRACE-Logging for this specfic request. Just give it a try.
+
+=== Example request
+include::{snippets}/trace-enable/curl-request.adoc[]

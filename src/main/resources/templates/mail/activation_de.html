@@ -1,0 +1,21 @@
+<html>
+
+<head>
+	<title>${msg("account.activation.title")}</title>
+	<#assign link = "${base_url}/account/${user.id}/activate?code=${user.activationCode}">
+</head>
+
+<body>
+	<p>
+		Willkommen,
+	</p>
+	<p>
+		um Ihren Account zu aktivieren folgen Sie bitte diesem Link: <a href="${link}">${link}</a>
+	</p>
+	<p>
+		Viele Grüße,
+		UAA
+	</p>
+</body>
+
+</html>

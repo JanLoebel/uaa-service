@@ -1,0 +1,18 @@
+server:
+     port: 0
+     
+management:
+     port: 0
+
+spring:
+  main.banner-mode: off # Disable banner
+  mail:
+    host: localhost # Locale mock SMTP
+    port: 30025
+    username:
+    password:
+
+# Assure for test profile following settings
+
+# Enable verification
+uaa.account.verification: true

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds" debug="false">
+	<!-- Reuse Spring-Boot defaults -->
+	<include resource="org/springframework/boot/logging/logback/defaults.xml" />
+
+	<!-- Properties -->
+	<property name="LOG_FILE" value="uaa-service.log" />
+	<property name="LOG_MAX_INDEX" value="3" />
+
+	<!-- Appender -->
+	<include
+		resource="org/springframework/boot/logging/logback/console-appender.xml" />
+	<include resource="logging/file-appender.xml" />
+
+	<!-- Log-Level Configuration -->
+	<springProfile name="dev">
+		<logger name="net.codeoftheday" level="DEBUG" />
+
+		<!-- Root-Logger -->
+		<root level="INFO">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="FILE" />
+		</root>
+	</springProfile>
+
+	<!-- Production profile -->
+	<springProfile name="prod">
+		<logger name="net.codeoftheday" level="INFO" />
+
+		<!-- Root-Logger -->
+		<root level="INFO">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="FILE" />
+		</root>
+	</springProfile>
+
+</configuration>

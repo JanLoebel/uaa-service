@@ -1,0 +1,9 @@
+uaa:
+  bootstrapFile: classpath:bootstrap/dev_bootstrap.json # for development add dev_bootstrap.json
+
+spring:
+  profiles:
+    include: doc # include Spring restDoc under /docs/index.html
+
+  jpa:
+    show-sql: true # Show all executed SQL Statments

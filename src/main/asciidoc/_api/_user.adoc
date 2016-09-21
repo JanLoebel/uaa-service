@@ -1,0 +1,49 @@
+== User Resource
+User-Controller Resource
+
+
+[[getUser]]
+=== Get users
+
+==== Request structure
+include::{snippets}/user-get/request-parameters.adoc[]
+
+==== Example request
+include::{snippets}/user-get/curl-request.adoc[]
+
+==== Response structure
+include::{snippets}/user-get/response-fields.adoc[]
+
+==== Example response
+include::{snippets}/user-get/http-response.adoc[]
+
+
+[[createUser]]
+=== Create new user
+
+==== Request structure
+include::{snippets}/user-create/request-fields.adoc[]
+
+==== Example request
+include::{snippets}/user-create/curl-request.adoc[]
+
+==== Response structure
+include::{snippets}/user-create/response-fields.adoc[]
+
+==== Example response
+include::{snippets}/user-create/http-response.adoc[]
+
+
+
+[[deleteUser]]
+=== Delete user
+
+==== Request structure
+===== Path parameters
+include::{snippets}/user-delete/path-parameters.adoc[]
+
+==== Example request
+include::{snippets}/user-delete/curl-request.adoc[]
+
+==== Example response
+include::{snippets}/user-delete/http-response.adoc[]

@@ -1,0 +1,5 @@
+= General
+The following chapters provide general information.
+
+[[trace]]
+include::./_trace.adoc[]

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds" debug="false">
+	<!-- Reuse Spring-Boot defaults -->
+	<include resource="org/springframework/boot/logging/logback/defaults.xml" />
+
+	<!-- Appender -->
+	<include
+		resource="org/springframework/boot/logging/logback/console-appender.xml" />
+
+	<!-- Test profile -->
+	<springProfile name="test">
+		<logger name="net.codeoftheday" level="INFO" />
+		<logger name="org.springframework.security" level="INFO"/>
+
+		<!-- Root-Logger -->
+		<root level="INFO">
+			<appender-ref ref="CONSOLE" />
+		</root>
+	</springProfile>
+
+</configuration>

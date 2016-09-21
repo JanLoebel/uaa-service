@@ -1,0 +1,17 @@
+= REST API
+The following chapters provide descriptions, sample request and responses to see how to interact with this service.
+
+[[account]]
+include::./_account.adoc[]
+
+[[authority]]
+include::./_authority.adoc[]
+
+[[user]]
+include::./_user.adoc[]
+
+[[client]]
+include::./_client.adoc[]
+
+[[token]]
+include::./_token.adoc[]

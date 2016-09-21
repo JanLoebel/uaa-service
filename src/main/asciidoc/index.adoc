@@ -1,0 +1,17 @@
+= UAA (User Authentification and Authorization Service)
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 3
+:sectlinks:
+
+[[overview]]
+== Overview
+UAA is a "User Authentification and Authorization Service" to provide JWT-based logins and user/authority management in a single service.
+
+[[general]]
+include::_general/_index.adoc[]
+
+[[api]]
+include::_api/_index.adoc[]

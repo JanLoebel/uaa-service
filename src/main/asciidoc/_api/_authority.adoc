@@ -1,0 +1,48 @@
+== Authority Resource
+Authority-Controller Resource
+
+
+[[getAuthorities]]
+=== Get authorities
+
+==== Request structure
+include::{snippets}/authority-get/request-parameters.adoc[]
+
+==== Example request
+include::{snippets}/authority-get/curl-request.adoc[]
+
+==== Response structure
+include::{snippets}/authority-get/response-fields.adoc[]
+
+==== Example response
+include::{snippets}/authority-get/http-response.adoc[]
+
+
+[[createNewAuthority]]
+=== Create new authority
+
+==== Request structure
+include::{snippets}/authority-create/request-fields.adoc[]
+
+==== Example request
+include::{snippets}/authority-create/curl-request.adoc[]
+
+==== Response structure
+include::{snippets}/authority-create/response-fields.adoc[]
+
+==== Example response
+include::{snippets}/authority-create/http-response.adoc[]
+
+
+[[deleteAuthority]]
+=== Delete authority
+
+==== Request structure
+===== Path parameters
+include::{snippets}/authority-delete/path-parameters.adoc[]
+
+==== Example request
+include::{snippets}/authority-delete/curl-request.adoc[]
+
+==== Example response
+include::{snippets}/authority-delete/http-response.adoc[]
