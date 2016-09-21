@@ -3,6 +3,8 @@
 
 [![Build Status](https://travis-ci.org/JanLoebel/uaa-service.svg?branch=master)](https://travis-ci.org/JanLoebel/uaa-service)
 
+[![Issue Count](https://codeclimate.com/github/JanLoebel/uaa-service/badges/issue_count.svg)](https://codeclimate.com/github/JanLoebel/uaa-service)
+
 This project should offer a service to authenticate and manage user and clients together with their rights. 
 
 Features:
