@@ -1,3 +1,15 @@
+# Deprecated
+**There are better alternatives nowadays. Have a look at e.g. Keycloak. This project is not maintained anymore. **
+
+
+
+
+
+
+
+
+
+
 # UAA-Service
 **User Authentication and Authorization Service**
 
